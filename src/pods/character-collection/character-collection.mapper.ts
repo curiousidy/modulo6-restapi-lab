@@ -1,13 +1,26 @@
-import * as apiModel from './api/hotel-collection.api-model';
+import * as apiModel from './api/character-collection.api-model';
 import * as viewModel from './character-collection.vm';
 
+// export const mapFromApiToVm = (
+//   character: apiModel.CharacterEntityApi
+// ): viewModel.CharacterEntityVm[] => {
+//   return character.results.map(result => ({
+//     id: result.id.toString(),
+//     image: result.image,
+//     name: result.name,
+//     status: result.status,
+//     species: result.species,
+//     gender: result.gender,
+//   }));
+// };
+
 export const mapFromApiToVm = (
-  hotel: apiModel.HotelEntityApi
-): viewModel.HotelEntityVm => ({
-  id: hotel.id,
-  picture: `${process.env.BASE_PICTURES_URL}/${hotel.thumbNailUrl}`,
-  name: hotel.name,
-  description: hotel.shortDescription,
-  rating: hotel.hotelRating,
-  address: hotel.address1,
-});
+  character: apiModel.Result
+):viewModel.CharacterEntityVm => ({
+  id: character.id.toString(),
+  image: character.image,
+  name: character.name,
+  status: character.status,
+  species: character.species,
+  gender: character.gender,
+})

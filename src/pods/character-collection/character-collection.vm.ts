@@ -1,8 +1,8 @@
-export interface HotelEntityVm {
+export interface CharacterEntityVm {
   id: string;
-  picture: string;
+  image: string;
   name: string;
-  description: string;
-  rating: number;
-  address: string;
+  status: string;
+  species: string;
+  gender: string;
 }
