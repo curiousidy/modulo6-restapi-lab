@@ -4,19 +4,22 @@ import CardHeader from '@mui/material/CardHeader/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CharacterEntityVm } from '../character-collection.vm';
+import { CharacterCollectionEntityVm } from '../character-collection.vm';
 import * as classes from './character-card.styles';
+import { useNavigate } from 'react-router-dom';
+import { linkRoutes, switchRoutes } from 'core/router';
 
 interface Props {
-  character: CharacterEntityVm;
+  character: CharacterCollectionEntityVm;
  
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character} = props;
-
+  const navigate = useNavigate();
   return (
-    <Card>
+    
+    <Card onClick={() =>  navigate(linkRoutes.character(character.id))}>
       <CardHeader
         title={character.name}
         subheader={character.gender}
