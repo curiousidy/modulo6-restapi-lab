@@ -1,5 +1,6 @@
 export interface Characters {
   id:       number;
+  bestSentences: string[];
   name:     string;
   status:   string;
   species:  string;

@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useCharacter } from './character.hook';
+import { updateCharacter } from './api';
 import CharacterComponent from './character.component';
+import { useNavigate } from 'react-router-dom';
+
 
 const CharacterContainer = () => {
-  const { character, loadCharacter } = useCharacter();
+  const { character, loadCharacter } = useCharacter(); 
+  const navigate = useNavigate();
+
+  const handleSave = async (character) => {
+    try {
+      const result = await updateCharacter(character, character.id);
+     if(result === 'ok') navigate(-1);
+    } catch (error) {
+      console.error(error);
+    }
+  }
  
-  React.useEffect(() => {
+  useEffect(() => {
     loadCharacter();
   }, []);
 
   return (
-    <CharacterComponent character={character} />
+    character && <CharacterComponent character={character} onSave={handleSave} />
   )
 }
 
-export default CharacterContainer
+export default CharacterContainer;
