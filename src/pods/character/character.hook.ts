@@ -11,8 +11,7 @@ export const useCharacter = () => {
   const {id} = useParams();
   const loadCharacter = () => {
     getCharacter(Number(id)).then((data) => {
-      console.log(data);
-    //   setCharacterCollection(mapToCollection(results,mapFromApiToVm));
+      setCharacter(mapFromApiToVm(data));
     }
     );
   };  

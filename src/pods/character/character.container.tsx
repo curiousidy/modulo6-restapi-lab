@@ -6,11 +6,11 @@ const CharacterContainer = () => {
   const { character, loadCharacter } = useCharacter();
  
   React.useEffect(() => {
-    loadCharacter();
+   loadCharacter();
   }, []);
 
   return (
-    <CharacterComponent character={character} />
+    character && <CharacterComponent character={character} />
   )
 }
 
