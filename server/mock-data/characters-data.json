@@ -8,21 +8,22 @@
   "characters": [
     {
       "id": 1,
+      "bestSentences": [
+        "pruebita",
+        "pruebita2",
+        "prueba3"
+      ],
       "name": "Rick Sanchez",
-      "status": "Alive",
-      "species": "Human",
-      "bestSentences": [],
-      "type": "",
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
       "gender": "Male",
+      "species": "Human",
+      "status": "Alive",
       "origin": {
         "name": "Earth (C-137)",
         "url": "https://rickandmortyapi.com/api/location/1"
       },
-      "location": {
-        "name": "Citadel of Ricks",
-        "url": "https://rickandmortyapi.com/api/location/3"
-      },
-      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "type": "",
+      "created": "2017-11-04T18:48:46.250Z",
       "episode": [
         "https://rickandmortyapi.com/api/episode/1",
         "https://rickandmortyapi.com/api/episode/2",
@@ -76,19 +77,16 @@
         "https://rickandmortyapi.com/api/episode/50",
         "https://rickandmortyapi.com/api/episode/51"
       ],
-      "url": "https://rickandmortyapi.com/api/character/1",
-      "created": "2017-11-04T18:48:46.250Z"
+      "location": {
+        "name": "Citadel of Ricks",
+        "url": "https://rickandmortyapi.com/api/location/3"
+      },
+      "url": "https://rickandmortyapi.com/api/character/1"
     },
     {
       "id": 2,
       "bestSentences": [
-        "bla",
-        "ble",
-        "bli",
-        "blo",
-        "bvlu",
-        "a ver",
-        "pato"
+        ""
       ],
       "name": "Morty Smith",
       "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
