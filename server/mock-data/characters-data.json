@@ -9,9 +9,7 @@
     {
       "id": 1,
       "bestSentences": [
-        "pruebita",
-        "pruebita2",
-        "prueba3"
+        "prueba"
       ],
       "name": "Rick Sanchez",
       "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
@@ -86,7 +84,7 @@
     {
       "id": 2,
       "bestSentences": [
-        ""
+        "esto furula"
       ],
       "name": "Morty Smith",
       "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
@@ -161,20 +159,17 @@
     {
       "id": 3,
       "name": "Summer Smith",
-      "status": "Alive",
+      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+      "gender": "Female",
       "species": "Human",
       "bestSentences": [],
-      "type": "",
-      "gender": "Female",
+      "status": "Alive",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
-      "location": {
-        "name": "Earth (Replacement Dimension)",
-        "url": "https://rickandmortyapi.com/api/location/20"
-      },
-      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+      "type": "",
+      "created": "2017-11-04T19:09:56.428Z",
       "episode": [
         "https://rickandmortyapi.com/api/episode/6",
         "https://rickandmortyapi.com/api/episode/7",
@@ -219,8 +214,11 @@
         "https://rickandmortyapi.com/api/episode/49",
         "https://rickandmortyapi.com/api/episode/51"
       ],
-      "url": "https://rickandmortyapi.com/api/character/3",
-      "created": "2017-11-04T19:09:56.428Z"
+      "location": {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "url": "https://rickandmortyapi.com/api/character/3"
     },
     {
       "id": 4,
@@ -289,20 +287,17 @@
     {
       "id": 5,
       "name": "Jerry Smith",
-      "status": "Alive",
+      "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+      "gender": "Male",
       "species": "Human",
       "bestSentences": [],
-      "type": "",
-      "gender": "Male",
+      "status": "Alive",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
-      "location": {
-        "name": "Earth (Replacement Dimension)",
-        "url": "https://rickandmortyapi.com/api/location/20"
-      },
-      "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+      "type": "",
+      "created": "2017-11-04T19:26:56.301Z",
       "episode": [
         "https://rickandmortyapi.com/api/episode/6",
         "https://rickandmortyapi.com/api/episode/7",
@@ -344,31 +339,36 @@
         "https://rickandmortyapi.com/api/episode/50",
         "https://rickandmortyapi.com/api/episode/51"
       ],
-      "url": "https://rickandmortyapi.com/api/character/5",
-      "created": "2017-11-04T19:26:56.301Z"
+      "location": {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "url": "https://rickandmortyapi.com/api/character/5"
     },
     {
       "id": 6,
+      "bestSentences": [
+        "hola"
+      ],
       "name": "Abadango Cluster Princess",
-      "status": "Alive",
-      "species": "Alien",
-      "bestSentences": [],
-      "type": "",
+      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
       "gender": "Female",
+      "species": "Alien",
+      "status": "Alive",
       "origin": {
         "name": "Abadango",
         "url": "https://rickandmortyapi.com/api/location/2"
       },
+      "type": "",
+      "created": "2017-11-04T19:50:28.250Z",
+      "episode": [
+        "https://rickandmortyapi.com/api/episode/27"
+      ],
       "location": {
         "name": "Abadango",
         "url": "https://rickandmortyapi.com/api/location/2"
       },
-      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
-      "episode": [
-        "https://rickandmortyapi.com/api/episode/27"
-      ],
-      "url": "https://rickandmortyapi.com/api/character/6",
-      "created": "2017-11-04T19:50:28.250Z"
+      "url": "https://rickandmortyapi.com/api/character/6"
     },
     {
       "id": 7,

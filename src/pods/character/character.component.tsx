@@ -1,7 +1,8 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { CharacterEntityVm } from './character.vm';
 import * as classes from './character.styles';
 import { Box, Button, Card, CardContent, CardMedia, TextField} from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   character: CharacterEntityVm;
@@ -11,18 +12,24 @@ interface Props {
 
 const CharacterComponent: FC<Props> = (props) => {
   const { onSave, character } = props;
-  const [sentences, setSentences] = useState<string[]>();
+  const [sentences, setSentences] = useState<string[]>([]);
   const [isEditingSentences, setIsEditingSentences] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSaveClick = () => {
-    onSave({ ...character, bestSentences: sentences });
-    setIsEditingSentences(false);
-  }
 
   const handleSentences = (newSentence:string) => {
     const splitSentences = newSentence.split('\n').map(sentence => sentence.trim());
     setSentences(splitSentences);
   }
+
+  const handleEdit = () => {
+    if(isEditingSentences){
+      onSave({ ...character, bestSentences: sentences });
+    }
+    setIsEditingSentences(!isEditingSentences);
+
+  }
+  
 
   return (
    
@@ -92,9 +99,16 @@ const CharacterComponent: FC<Props> = (props) => {
       <Button 
           style={{ marginBottom: '8px',width: '100%' }} 
           variant="contained" 
-          onClick={isEditingSentences ? handleSaveClick : () => setIsEditingSentences(true)}
+          onClick={ handleEdit }
       >
           {isEditingSentences ? 'Save' : 'Edit Sentences'}
+      </Button>
+      <Button 
+          style={{ marginBottom: '8px',width: '100%' }} 
+          variant="contained" 
+          onClick={ () => navigate(-1) }
+      >
+          Volver
       </Button>
     </Card>
      

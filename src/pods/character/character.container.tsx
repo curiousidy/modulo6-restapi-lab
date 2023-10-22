@@ -12,7 +12,7 @@ const CharacterContainer = () => {
   const handleSave = async (character) => {
     try {
       const result = await updateCharacter(character, character.id);
-     if(result === 'ok') navigate(-1);
+    
     } catch (error) {
       console.error(error);
     }
