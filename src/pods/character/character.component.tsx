@@ -33,7 +33,7 @@ const CharacterComponent: FC<Props> = (props) => {
 
   return (
    
-    <Card style={{ width: '400px', margin: 'auto' }}>   
+    <Card style={{ display:'flex' }}>   
       
         <div style={{ width: '400px', height: '400px', margin: 'auto' , flexDirection:'column'}}>
           <CardMedia
@@ -94,22 +94,22 @@ const CharacterComponent: FC<Props> = (props) => {
                 onChange={(e) => handleSentences(e.target.value)}
               />
           </Box>
+          <Button 
+              style={{width: '100%' }} 
+              variant="contained" 
+              onClick={ handleEdit }
+          >
+              {isEditingSentences ? 'Save' : 'Edit Sentences'}
+          </Button>
+          <Button 
+              style={{marginTop:'8px', width: '100%' }} 
+              variant="contained" 
+              onClick={ () => navigate(-1) }
+          >
+              Volver
+          </Button>
         </CardContent>
      
-      <Button 
-          style={{ marginBottom: '8px',width: '100%' }} 
-          variant="contained" 
-          onClick={ handleEdit }
-      >
-          {isEditingSentences ? 'Save' : 'Edit Sentences'}
-      </Button>
-      <Button 
-          style={{ marginBottom: '8px',width: '100%' }} 
-          variant="contained" 
-          onClick={ () => navigate(-1) }
-      >
-          Volver
-      </Button>
     </Card>
      
 

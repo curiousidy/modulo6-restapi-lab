@@ -9,7 +9,8 @@
     {
       "id": 1,
       "bestSentences": [
-        "prueba"
+        "prueba",
+        "prueba 2"
       ],
       "name": "Rick Sanchez",
       "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
